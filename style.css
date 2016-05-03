@@ -18,16 +18,16 @@ a:active {
   color: #1BB3D7;
 }
 
-h1, p {
+h2, p {
   width: 400px;
   margin: 0 auto;
 }
 
-h1, p, h1::before {
+h2, p, h1::before {
   transition: .4s;
 }
 
-h1 {
+h2 {
   position: relative;
   font-weight: 500;
   font-size: 13px;
@@ -35,16 +35,16 @@ h1 {
   cursor: pointer;
 }
 
-h1:first-child {
+h2:first-child {
   margin-top: 100px;
 }
 
-h1:not(:first-child) {
+h2:not(:first-child) {
   padding-top: 12px;
   border-top: 1px solid #E9EBED;
 }
 
-h1::before {
+h2::before {
   content: "";
   position: absolute;
   width: 7px;
@@ -55,12 +55,12 @@ h1::before {
   transform: rotate(-90deg);
 }
 
-h1.open::before {
+h2.open::before {
   -webkit-transform: none;
   transform: none;
 }
 
-h1.open ~ h1 {
+h2.open ~ h1 {
   -webkit-transform: translateY(24px);
   transform: translateY(24px);
 }
@@ -70,7 +70,7 @@ p {
   pointer-events: none;
 }
 
-h1.open + p {
+h2.open + p {
   opacity: 1;
   pointer-events: auto;
   -webkit-transform: translateY(8px);
