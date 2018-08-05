@@ -33,6 +33,11 @@ dl, dd, ol, ul, figure {
  */
 body {
   font-family: "proxima-nova";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
   font-size: 18px;
   line-height: 1.5;
   color: #151515;
@@ -564,4 +569,3 @@ li.vis {
 h3.post-title {
   font-family: "open-sans";
   font-size: 35px; }
-
